@@ -1,0 +1,89 @@
+{
+  "userName": "admin",
+  "email": "test@icloud.com",
+  "data": {
+    "vehicles": [
+      {
+        "mileAge": 3232,
+        "licencePlate": "LL-123",
+        "name": "testCar",
+        "LOGEntryList": [
+          {
+            "distance": 30,
+            "time": 0.8666666666666667,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-02",
+            "notes": ""
+          },
+          {
+            "distance": 65,
+            "time": 1,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-08",
+            "notes": ""
+          },
+          {
+            "distance": 321,
+            "time": 4.9,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-10",
+            "notes": ""
+          },
+          {
+            "distance": 35,
+            "time": 0.75,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-18",
+            "notes": ""
+          },
+          {
+            "distance": 131,
+            "time": 2.5,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-19",
+            "notes": ""
+          }
+        ],
+        "notes": "this is a test"
+      },
+      {
+        "mileAge": 12345,
+        "licencePlate": "LL-TEST2",
+        "name": "testCar2",
+        "LOGEntryList": [
+          {
+            "distance": 30,
+            "time": 0.8,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-10",
+            "notes": ""
+          },
+          {
+            "distance": 60,
+            "time": 1.2,
+            "startPoint": "NOINPUT",
+            "destination": "NOINPUT",
+            "weather": "NOINPUT",
+            "date": "2022-05-13",
+            "notes": ""
+          }
+        ],
+        "notes": "this is a test2"
+      }
+    ],
+    "settings": {}
+  },
+  "pw": -1194890887
+}

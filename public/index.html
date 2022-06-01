@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>myLOGR</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/userServer_functions.js" defer></script>
+    <script src="./js/logs.js" defer></script>
+    <script src="./js/dashboard.js" defer></script>
+    <script src="./js/settings.js" defer></script>
+    <script src="./js/public_html_templates.js" defer></script>
+    <script src="./js/html_functions.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <! Chart.js >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <! Scrollreveal >
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+
+    <script>
+        window.sr = new ScrollReveal({delay: 200});
+
+        const socket = io();
+    </script>
+</head>
+<body>
+
+<header>
+    <div onclick="changeSite('start')" style="display: flex"><p style="margin: 0px">my</p><strong>LOGR</strong></div>
+    <nav id="nav">
+        <div onclick="changeSite('about')" class="buttonLIkeDiv" id="NAV_ABOUT">About</div>
+        <div>|</div>
+        <div onclick="changeSite('log')" class="buttonLIkeDiv" id="NAV_LOG">LOG - HISTORY</div>
+        <div>|</div>
+        <div onclick="changeSite('dashboard')" class="buttonLIkeDiv" id="NAV_DASHBOARD">DASHBOARD</div>
+        <div>|</div>
+        <div onclick="changeSite('user')" class="buttonLIkeDiv"><img src="./icons/user.png" alt="SIGN-IN"
+                                                                     class="header_icons"></div>
+    </nav>
+
+</header>
+
+<overlay>
+
+</overlay>
+
+
+<main>
+
+</main>
+
+</body>
+
+</html>

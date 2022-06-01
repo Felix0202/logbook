@@ -1,0 +1,493 @@
+/* COLOR SHEME by https://www.schemecolor.com/freepik-website.php */
+
+/*:root {
+    --backgroundColor: #12191D;
+    --fontColor: #F4F4F4;
+    --hoverColor: #7C98A9;
+    --specialColor: #0072E9;
+    --buttonBackgroundcolor: #1C262D;
+    --logEntryColor: #1C262D;
+    --specialcolorDark: #fff;
+    --errorColor: #ff0000;
+
+    --SecondBackgroundColor: #364954;
+    --SecondFontColor: #F4F4F4;
+
+    --colorDBCharts: #000;
+
+    --fontSizeHeader: 1.4em;
+    --fontSizeHeadLine: 1.3em;
+    --fontSizeInput: 1.2em;
+    --fontSizeButton: 1.3em;
+
+    --fontSizeDBValue: 7vw;
+    --fontSizeDBHeadline: 1.5vw;
+}*/
+
+/* https://www.color-hex.com/color-palette/81190 */
+:root {
+    --backgroundColor: #192428;
+    --fontColor: #F4F4F4;
+    --hoverColor: #7C98A9;
+    --specialColor: #0784b5;
+    --buttonBackgroundcolor: #2d383c;
+    --logEntryColor: #2d383c;
+    --specialcolorDark: #fff;
+    --errorColor: #ff0000;
+
+    --SecondBackgroundColor: #414c50;
+    --SecondFontColor: #F4F4F4;
+
+    --colorDBCharts: #000;
+
+    --fontSizeHeader: 1.4em;
+    --fontSizeHeadLine: 1.3em;
+    --fontSizeInput: 1.2em;
+    --fontSizeButton: 1.3em;
+
+    --fontSizeDBValue: 7vw;
+    --fontSizeDBHeadline: 1.5vw;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+overlay {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 0);
+}
+
+input {
+    font-size: var(--fontSizeInput);
+    background-color: var(--SecondBackgroundColor);
+    color: var(--fontColor);
+}
+
+button {
+    font-size: var(--fontSizeButton);
+}
+
+@keyframes MessageFadeOut {
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.BOX_overlayMessage {
+    background-color: var(--backgroundColor);
+    border: var(--fontColor) 3px solid;
+    font-size: var(--fontSizeHeader);
+    border-radius: 2vw;
+    text-align: center;
+    padding: 1vw;
+    animation: MessageFadeOut ease 3s;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+.buttonLIkeDiv {
+    corsor: pointer;
+}
+
+.buttonLIkeDiv:hover {
+    color: var(--hoverColor);
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 1vw 0.3vh 1vw;
+    font-size: var(--fontSizeHeader);
+    border-bottom: 1px var(--fontColor) solid;
+}
+
+.header_icons {
+    width: 1.3em;
+}
+
+.BTN{
+    background-color: var(--buttonBackgroundcolor);
+    color: var(--specialColor);
+    border: var(--SecondFontColor) 1px solid;
+    font-size: var(--fontSizeButton);
+    border-radius: 0.5vw;
+    padding: 0.3vw;
+    width: fit-content;
+}
+
+.BTN:hover{
+    background-color: var(--hoverColor);
+    color: var(--SecondFontColor);
+}
+
+#BTN_newUser_SUBMIT, #BTN_userLogin_SUBMIT, #BTN_SETTINGS_NEWVEHICLE_SUBMIT, #BTN_newLog_Entry_SUBMIT{
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+}
+
+nav > div {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+#I_VEHICLE_CHANGE{
+    font-size: calc(var(--fontSizeInput) - 0.2em);
+}
+
+.BOX_VEHICLE_HEADER{
+    margin: 2vh 5vw 2vh 5vw;
+    display: flex;
+    justify-content: right;
+    font-size: var(--fontSizeHeadLine);
+    font-weight: bold;
+}
+
+/* START */
+
+.BOX_START{
+    margin: 2vh 10vw 2vh 10vw;
+}
+
+.BOX_START_CONTENT{
+    display: flex;
+    width: 80vw;
+}
+
+.BOX_START_CONTENT_Text{
+    width: 35vw;
+    margin: 1vw;
+    font-size: var(--fontSizeHeader);
+}
+
+.BOX_START_CONTENT_Text > h2 {
+    color: var(--specialColor);
+}
+
+.BOX_START_CONTENT_Text > h3 {
+    color: var(--hoverColor);
+}
+
+.BOX_START_CONTENT_img{
+    margin: 1vw;
+    width: 45vw;
+}
+
+.BOX_START_CONTENT_img > img{
+    width: 43vw;
+}
+
+/* ABOUT */
+
+.BOX_ABOUT_TEXT{
+    width: 80vw;
+    margin: 2vh 10vw 2vh 10vw;
+}
+
+.BOX_ABOUT_TEXT > h2 {
+    color: var(--specialColor);
+}
+
+.BOX_ABOUT_TEXT > h3 {
+    color: var(--hoverColor);
+}
+
+.BOX_ABOUT_TEXT > p > a {
+    color: var(--specialColor);
+}
+
+.BOX_ABOUT_TEXT > p > a:hover {
+    color: var(--hoverColor);
+}
+
+/*USER*/
+
+#BOX_UserStart {
+    width: 30vw;
+    margin: 10vh 35vw;
+    border-radius: 1vw;
+    font-size: var(--fontSizeHeader);
+    border: 2px var(--fontColor) solid;
+    padding-bottom: 1vh;
+}
+
+#BOX_UserLoginMethodeChange {
+    display: flex;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    background-color: var(--SecondBackgroundColor);
+    margin-bottom: 1vh;
+}
+
+#BOX_UserLoginMethodeChange > div {
+    width: 15vw;
+    text-align: center;
+}
+
+#BOX_UserInputs, #BOX_NewUser {
+    position: relative;
+    text-align: center;
+}
+
+#BOX_NewUser {
+    display: none;
+}
+
+#BOX_UserLoginMethodeChange > div > p:hover {
+    color: var(--hoverColor);
+}
+
+.I_userLogin > input, .I_NewUser > input {
+    width: 20vw;
+}
+
+/*USER SETTINGS*/
+
+.BOX_SETTINGS_MAIN{
+    display: flex;
+    width: 100vw;
+}
+
+#BOX_SETTINGS_NAV{
+    width: 20vw;
+    background-color: var(--SecondBackgroundColor);
+}
+
+#BOX_SETTINGS_NAV > div{
+    color: var(--SecondFontColor);
+    padding: 5%;
+    width: 100%;
+    font-size: var(--fontSizeButton);
+}
+
+#BOX_SETTINGS_NAV > div:hover{
+    color: var(--hoverColor);
+}
+
+#BOX_SETTINGS_CONTENT{
+    width: 80vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.BOX_SETTINGS_VEHICLES_HEADER {
+    margin: 2vh 0vw 2vh 0vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fontSizeHeadLine);
+    font-weight: bold;
+}
+
+.BOX_SETTINGS_VEHICLES {
+    border-radius: 1vw;
+    border: 2px var(--fontColor) solid;
+}
+
+.BOX_SETTINGS_VEHICLES_Entries_Header, .BOX_SETTINGS_VEHICLES_Entries > div {
+    text-align: center;
+    display: grid;
+    padding: 0.3vw 0.3vw 0.3vw 0.3vw;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.BOX_SETTINGS_VEHICLES_Entries > div:nth-child(even) {
+    background-color: var(--logEntryColor);
+}
+
+.BOX_SETTINGS_VEHICLES_Entries > div:last-child {
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.BOX_SETTINGS_VEHICLES_new {
+    background-color: var(--backgroundColor);
+    border: var(--fontColor) 3px solid;
+    border-radius: 2vw;
+    width: 30vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.BOX_SETTINGS_VEHICLES_NEW {
+    background-color: var(--backgroundColor);
+    border: var(--fontColor) 3px solid;
+    border-radius: 2vw;
+    width: 30vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.I_SETTINGS_NEWVEHICLE > input {
+    width: 20vw;
+}
+
+.I_SETTINGS_VEHICLES_tempVehicle {
+    display: flex;
+}
+
+.I_SETTINGS_VEHICLES_tempVehicle > input {
+    width: 40vw;
+    font-size: var(--fontSizeInput);
+}
+
+.I_SETTINGS_VEHICLES_tempVehicle > div {
+    width: 30vw;
+}
+
+/*LOGS*/
+
+.BOX_LOG_HEADER {
+    margin: 2vh 5vw 2vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fontSizeHeadLine);
+    font-weight: bold;
+}
+
+#I_LOG_SORT {
+    font-size: calc(var(--fontSizeInput) - 0.2em);
+}
+
+.BOX_LOG {
+    margin: 2vh 5vw 2vh 5vw;
+    border-radius: 1vw;
+    border: 2px var(--fontColor) solid;
+}
+
+.BOX_LOG_Entries_Header, .BOX_LOG_Entries > div {
+    text-align: center;
+    display: grid;
+    padding: 0.3vw 0.3vw 0.3vw 0.3vw;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.BOX_LOG_Entries > div:nth-child(even) {
+    background-color: var(--logEntryColor);
+}
+
+.BOX_LOG_Entries > div:last-child {
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.BOX_newLog_Entry {
+    background-color: var(--backgroundColor);
+    border: var(--fontColor) 3px solid;
+    border-radius: 2vw;
+    width: 40vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.I_newLog_Entry > input {
+    width: 30vw;
+}
+
+.I_editLog_Entry {
+    display: flex;
+    justify-content: center;
+    font-size: var(--fontSizeInput);
+}
+
+#I_Log_Entry_Unit{
+    font-size: var(--fontSizeButton);
+}
+
+.I_editLog_Entry > input {
+    width: 40vw;
+    font-size: var(--fontSizeInput);
+}
+
+.I_editLog_Entry > div {
+    width: 30vw;
+}
+
+/*DASHBOARD*/
+/*DB -> Dashboard*/
+
+.BOX_DB_Charts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.BOX_DB_Charts > div {
+    border: 2px var(--SecondFontColor) solid;
+    border-radius: 2vw;
+    margin: 1vw;
+    background-color: var(--SecondBackgroundColor);
+    color: var(--SecondFontColor);
+    position: relative;
+}
+
+.BOX_DB_Chart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.BOX_DB_Stats_Headline{
+    position: absolute;
+    top: 0%;
+    text-align: left;
+    padding: 1vw;
+    font-size: var(--fontSizeDBHeadline);
+}
+
+.BOX_DB_Stats_Headline > p{
+    margin: 0px;
+}
+
+.P_DB_Stats_Value{
+    font-size: var(--fontSizeDBValue);
+    font-weight: bold;
+    margin: 0px;
+}
+
+.P_DB_Stats_Unit{
+    margin: 0px;
+    margin-top: calc(var(--fontSizeDBValue) - 1em);
+}
+
+.BOX_DB_STATS{
+    width: 23vw;
+    height: 23vw;
+}
+
+#BOX_DB_CHART_Time_Distance {
+    padding: 1vw;
+    width: 73vw;
+    height: 23vw;
+}
