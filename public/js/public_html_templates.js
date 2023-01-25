@@ -114,7 +114,7 @@ let html_template_start =
         <div class="BOX_START_CONTENT load-hidden" style="flex-wrap: wrap">
             <div class="BOX_START_CONTENT_Text" style="width: 80vw">
                 <h2>What is myLOGR?</h2>
-                <p>myLOGR is an easy to use Online Appplication witch allows you to save all your rides, in your different vehicles. </p>
+                <p>myLOGR is an easy to use Online Application witch allows you to save all your rides, in your different vehicles. </p>
             </div>
             <div class="BOX_START_CONTENT_Text" style="width: 80vw">
                 <h3>And how does it work?</h3>

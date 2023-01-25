@@ -5,7 +5,7 @@ let lastSortParameter = '-date';
 
 function saveAndCheckEntry(distance, time, startPoint, destination, weather, date, notes, indexOFBOX) {
     if (distance === "" || distance < 0 || date === "") {
-        return '<p style="color: var(--errorColor)">Please insert at least the distance and date</p>';
+        return '<p style="color: var(--errorColor)">Please insert at least the distance, time and date</p>';
     } else {
         let unit = document.getElementById('I_Log_Entry_Unit').value;
         let entry = {
